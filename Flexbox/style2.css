@@ -1,0 +1,72 @@
+#content {
+    height: 600px;
+    background: #dcdcdc;
+    display: flex;
+
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+    /* Define a proporção de espaço ocupado por um item*/
+    flex-grow: 0;
+    /* Define a capacidade de redução de tamanho do item */
+    flex-shrink: 1;
+    /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+    flex-basis: 200px;
+}
+/******Flex-Grow*************/
+.item1 {
+    flex-grow: 1; 
+}
+
+.item2 {
+    flex-grow: 2;
+}
+
+.o-flex1 {
+    order: 1;
+}
+
+.o-flex2 {
+    order: 2;
+}
+
+.o-flex3 {
+    order: 3;
+}
+
+.o-flex4 {
+    order: 4;
+}
+
+.o-flex {
+    order: -1;
+}
+/********Flex-Shrink**********/
+.s-item {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid darkgray;
+    /* Define a proporção de espaço ocupado por um item*/
+    flex-grow: 0;
+    /* Define a capacidade de redução de tamanho do item */
+    flex-shrink: 1;
+}
+
+.shrink-item1 {
+    flex-shrink: 1;
+}
+
+.shrink-item2 {
+    flex-shrink: 2;
+}
+
+.shrink-item3 {
+    flex-shrink: 5;
+}

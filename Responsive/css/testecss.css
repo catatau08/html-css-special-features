@@ -1,0 +1,635 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+    } /*definindo todos os elementos mencionados como blocos*/
+
+    @media (min-width: 768px) { /*Formtação geral padrão*/
+    @supports (display:grid) {
+    .c-block-container .c-block-body, .c-block-container .c-block-media {
+    float: none;
+    min-width: 0;
+    padding: 0;
+    width: auto;
+    }
+}
+}
+/***********************Formating navigation*****************/
+    @supports (position:sticky) {
+        html.mzp-has-sticky-navigation .c-navigation.mzp-is-sticky {
+            left: 0;
+            position: sticky;
+            top: 0;
+            -webkit-transition: transform .3s ease-in-out;
+            transition: transform .3s ease-in-out;
+            z-index: 1000;
+        }
+    }
+
+.c-navigation {
+    background: #fff;
+    box-shadow: 0 0 1px 1px rgba(29,17,51,.04),0 0 3px 2px rgba(9,32,77,.12), 0 0 2px -3px rgba(29,17,51,.12);
+    color: #000;
+  }
+  /*************************************************************/
+  .c-navigation .c-navigation-1-content {
+    padding: 16px 24px;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .c-navigation .c-navigation-1-content {
+      padding: 0 64px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  .c-navigation .c-navigation-1-content {
+    padding: 0 96px;
+  }
+  }
+
+  /*************************************************************/
+  .c-navigation .c-navigation-container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  /*************************************************************/
+  @media (min-width: 768px) {
+    .js .c-navigation-menu-button {
+      display: none;
+    }
+  }
+  
+  .js .c-navigation-menu-button {
+    display: block;
+  }
+  
+  .c-navigation-menu-button:not(.has-label) {
+    padding: 0;
+  }
+  
+  .c-navigation-menu-button:not(.has-label) {
+    background-position: 50%;
+  }
+  
+  .c-navigation-menu-button:not(.has-label) {
+    cursor: pointer;
+    direction: ltr;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    white-space: nowrap;
+    width: 32px;
+  }
+  
+  .c-navigation-menu-button {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("/img/icons/menu.79f1f0c795df.svg");
+    background-position: right 6px center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 4px;
+    display: none;
+    float: right;
+    height: 32px;
+    padding: 0 32px 0 6px;
+  }
+
+    [type="button"],
+    [type="reset"],
+    [type="submit"], button {
+        appearance: button;
+    }
+
+    button, input, optgroup, select, textarea {
+        font-family: Inter,X-LocaleSpecific,sans-serif;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+        line-height: 1.25;
+    }
+/***************************************************************************/
+    .c-navigation-logo {
+        float: left;
+        line-height: 0;
+    }
+
+    @media (min-width: 768px) {
+        .c-navigation-logo {
+            margin: 16px 16px 16px 0;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .c-navigation-logo {
+            margin: 16px 32px 16px 0;
+        }
+    }
+
+    @media (min-width:1312px) {
+        .c-navigation-logo {
+            margin: 16px 48px 16px 0;
+        }
+    }
+
+    /***************************************************************************/
+    .c-navigation-logo .c-navigation-logo-image {
+        display: inline-block;
+        height: 32px;
+    }
+
+    a img, iframe {
+        border: 0;
+    }
+
+    embed, img, object, video {
+        height: auto;
+        max-width: 100%;
+    }
+    /*******************************************************************************/
+    .js .c-navigation-l-content .c-navigation-items.mzp-is-open {
+        display: block;
+    }
+
+    .c-navigation-items {
+        clear: both;
+        padding-top:16px;
+    }
+    
+    @media (min-width: 768px) {
+        .js .c-navigation-l-content .c-navigation-items {
+            display: block;
+        }
+    }
+
+    .js .c-navigation-l-content .c-navigation-items {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .c-navigation-items {
+            clear: none;
+            padding-top:0 ;
+        }
+    }
+
+    /********************************************************************************/
+    .c-navigation-menu {
+        margin-bottom: -16px;
+        vertical-align: bottom;
+    }
+
+    @media (min-width: 768px) {
+        .c-navigation-menu {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-left: -7px;
+            width: auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .c-navigation-menu {
+            margin-left: -16px;
+        }
+    }
+
+    /********************************************************************************/
+    @media (min-width: 768px) {
+        .c-menu {
+            z-index: 0;
+        }
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+        display: block;
+    }
+    /********************************************************************************/
+    ol, ul {
+        list-style: none;
+    }
+
+    dl, ol, p, table, ul {
+        margin: 0 0 1.25em;
+    }
+
+    blockquote, body, dd, dl, dt, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, html, li, ol, p, pre, table, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .c-menu-category-list {
+        margin-bottom: 8px
+    }
+
+    @media (min-width: 768px) {
+        .c-menu-category-list {
+            margin-bottom: 0;
+            padding-top: 16px;
+        }
+    }
+
+    /********************************************************************************/
+    blockquote, body, dd, dl, dt, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, html, li, ol, p, pre, table, ul {
+        margin: 0;
+        padding: 0;
+      }
+    
+      .c-menu-category {
+        border-top: 1px solid #ededf0;
+        position: relative;
+    }
+
+    @media (min-width: 768px) {
+        .c-menu-category {
+            border-top: 0;
+            display: inline-block;
+            float: left;
+        }
+    }
+    /********************************************************************************/
+    .c-menu-category .c-menu-title {
+        color: #000;
+        display: block;
+        font-family: Inter,X-LocaleSpecific, sans-serif;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 0;
+        min-height: 32px;
+        padding: 0px 0;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    @media (min-width: 768px) {
+        .c-menu-category .c-menu-title {
+            border-bottom: none;
+            padding: 0 8px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .c-menu-category .c-menu-title {
+            padding: 0 16px;
+        }
+    }
+
+    @supports (display:flex) {
+    .c-menu-category .c-menu-title {
+        align-items: center;
+        display: flex;
+    }
+}
+
+    :link {
+        color: #0060df;
+        text-decoration: underline;
+    }
+    /********************************************************************************/
+    blockquote, body, dd, dl, dt, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, html, li, ol, p, pre, table, ul {
+        margin: 0;
+        padding: 0;
+      }
+    
+    .c-menu-category {
+        border-top: 1px solid #ededf0;
+        position: relative;
+    }
+    
+    @media (min-width: 768px) {
+        .c-menu.category {
+            border-top: 0;
+            display: inline-block;
+            float: left;
+        }
+    }
+    /********************************************************************************/
+    .c-menu-category.mzp-has-drop-down .c-menu-title {
+        text-decoration: none;
+    }
+    
+    :link {
+        color: 0060df;
+        text-decoration: underline;
+    }
+
+    .c-menu-category .c-menu-title {
+        color: #000;
+        display: block;
+        font-family: Inter,X-LocaleSpecific,sans-serif;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 0;
+        min-height: 32px;
+        padding: 8px 0;
+        position: relative;
+        text-decoration: none;
+    }
+
+    @supports (display:flex) {
+        .c-menu-category .c-menu-title {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .c-menu-category .c-menu-title {
+            border-bottom: none;
+            padding: 0 8px;
+        }
+    }
+
+    /********************************************************************************/
+    blockquote, body, dd, dl, dt, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, html, li, ol, p, pre, table, ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .c-menu-category {
+        border-top: 1px solid #ededf0;
+        position: relative;
+    }
+    
+    @media (min-width: 768px) {
+        .c-menu-category {
+            border-top: 0;
+            display: inline-block;
+            float: left;
+        }
+    }
+    /**********************************************************************************/
+    c-menu-category.mzp-has-drop-down .c-menu-title {
+        text-decoration: none;
+    }
+
+    .c-menu-category .c-menu-title {
+        color: #000;
+        display: block;
+        font-family: Inter,X-LocaleSpecific,sans-serif;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 0;
+        min-height: 32px;
+        padding: 8px 0;
+        position: relative;
+        text-decoration: none;
+    }
+
+    @supports (display:flex) {
+    .c-menu-category .c-menu-title {
+        align-items: center;
+        display: flex;
+    }
+    }
+    
+    @media (min-width: 768px) {
+        .c-menu-category .c-menu-title {
+            border-bottom: none;
+            padding: 0 8px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .c-menu-category .c-menu-title {
+            padding: 0 16px;
+        }
+    }
+    /*************************************************************************************/
+    .c-menu-category.mzp-has-drop-down .c-menu-title {
+        text-decoration: none;
+      }
+
+      .c-menu-category .c-menu-title {
+        color: #000;
+        display: block;
+        font-family: Inter,X-LocaleSpecific,sans-serif;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 0;
+        min-height: 32px;
+        padding: 8px 0;
+        position: relative;
+        text-decoration: none;
+      }
+
+    :link {
+        color: #0060df;
+        text-decoration: underline;
+      }
+
+    @supports(display:flex) {
+        .c-menu-category .c-menu-title {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .c-menu-category .c-menu-title {
+            padding: 0 16px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .c-menu-category .c-menu-title {
+            border-bottom: none;
+            padding: 0 8px;
+        }
+    }
+      /******************************************************************************/
+      @media (min-width: 768px) {
+        .c-menu-category-list::after {
+            clear: both;
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+      }
+      
+      .c-navigation .c-navigation-container::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        visibility: hidden;
+      }
+
+      .c-navigation .c-navigation-1-content::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        visibility: hidden;
+      }
+/*******************************Formatação do c block********************************/
+/*********************Criando a area principal que engloba tudo**********************/
+    
+    .t-intro.c-block { /*Formata o bloco principal*/
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-top: 32px;
+    }
+
+.c-block { 
+    margin: 0;
+    overflow-x: hidden ;
+    padding: 48px 0; /*padding vertical*/
+    position: relative;
+    /*border: 1px solid red;*/
+   }
+
+   @media (min-width: 768px) { /*Formata apenas para telas maiores que 768px */
+   .c-block {
+    padding: 48px 0;
+   }
+}
+
+@media (min-width: 1024px) { 
+    /* Estilos a serem aplicados para largura de tela maior que 768px */
+    /* Por exemplo, pode-se ajustar a formatação para telas maiores */
+.t-intro.c-block {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding-top: 64px ;
+}
+}
+
+   @media (min-width: 1024px) {
+    .c-block {
+        padding: 96px 0; /*top e bottom*/
+    }
+}
+/*******************************Formatando c-block-container ************************/
+/*********************Criando o Container onde ira ficar os conteudos****************/
+    .t-intro .c-block-container {
+        max-width: 1334px;
+    }
+
+    @media (min-width: 768px) {
+    @supports (display: grid) {
+    .c-block-container {
+        grid-column-gap: 80px;
+        display: grid;
+        grid-template-areas: "body media";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+}
+/*ordem classe > menor > maior */
+.c-block-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /*A propriedade CSS box-sizing define como a largura e a altura totais de um elemento são calculadas.*/
+    margin: 0 auto; /*é usado para centralizar horizontalmente elementos block-level */
+    max-width: 1344px;
+    min-width: 304px;
+    padding: 0 32px;
+    /*border: 1px solid blue;*/
+}
+
+@media (min-width: 768px) {
+    .c-block-container {
+        padding: 0 64px;
+    }
+}
+
+    @media (min-width: 1024px) {
+        .c-block-container {
+            padding: 0 96px; /*padding horizontal*/
+        } 
+    }
+
+    @supports (display:grid){
+    .c-block-container .l-v-center {
+        align-self: center;
+    }
+}
+/*****************************Formatando Container Body************************/
+    /*.c-block-body {
+        border: 1px solid green;
+    }*/
+
+    @media (min-width: 768px) {
+    @supports (display: grid) {
+        .c-block-body {
+            grid-area: body;
+    }
+}
+}
+    @media (min-width: 768px) {
+        .c-block-body {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            float: left;
+            padding: 0 40px;
+            width: 50%;
+        }
+    }
+
+    .c-block-body {
+        position: relative;
+    }
+
+/*******************************Formtando Container Media ***************************/
+    /*.c-block-media {
+        border: 1px solid yellow;
+    }*/
+
+    @media (min-width: 768px) {
+    @supports (display: grid) {
+        .c-block-media {
+            align-self: stretch; /*alinha o item dentro da área do grid.*/
+            /*seu tamanho será aumentado igualmente, respeitando as restrições impostas */
+            grid-area: media;
+        }
+    }    
+    }
+
+    @media (min-width: 768px) {
+    .c-block-media {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float: right;
+        padding: 0 40px;
+        width: 50%;
+    }
+    }
+
+    .c-block-media {
+        position: relative;
+    }
+/*************************Ultimas formatações***************************************/
+    .c-block-container::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+/************************************************************************************/
+.imgconfig {
+    background-color: #f9f9fb;
+    background-image: url("/img/firefox.png");
+    background-size: 514px 371px;
+    border-radius: 4px;
+    box-shadow: 0 16px 24px 2px rgba(29,17,51,.04),0 6px 32px 4px rgba(9,32,77,.12),0 8px 12px -5px rgba(29,17,51,.12);
+    height: 371px;
+    left: -30px;
+    max-width: none;
+    top: 100px;
+    width: 514px;
+}
+/**/
