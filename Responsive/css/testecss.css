@@ -622,7 +622,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 /************************************************************************************/
 .imgconfig {
     background-color: #f9f9fb;
-    background-image: url("/img/firefox.png");
+    background-image: url("/img/firefox2.png");
     background-size: 514px 371px;
     border-radius: 4px;
     box-shadow: 0 16px 24px 2px rgba(29,17,51,.04),0 6px 32px 4px rgba(9,32,77,.12),0 8px 12px -5px rgba(29,17,51,.12);
@@ -633,3 +633,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     width: 514px;
 }
 /**/
+
+.c-block-media {
+    border: 2px solid green;
+}
+
+.c-block-body {
+    border: 2px solid blue;
+}
